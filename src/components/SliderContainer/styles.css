@@ -1,0 +1,123 @@
+.slider-section {
+  background-color: #996633;
+}
+
+.slider-container {
+  padding: 100px 90px;
+}
+
+.slider-container>.slider-frame {
+  max-width: 1600px;
+  margin: auto;
+}
+
+.slider-box {
+  display: flex;
+  column-gap: 40px;
+  border-radius: 12px;
+  ;
+}
+
+.slider-right-box,
+.slider-left-box {
+  width: 100%;
+}
+
+.slider-right-box {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 0 16px;
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+.slider-right-box>img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  left: 0;
+  z-index: -1;
+}
+
+.slider-title {
+  margin-bottom: -25px;
+}
+
+.slider-subtitle {
+  padding: 25px 0 5px 0
+}
+
+.slider-control-bottomcenter>ul>li>button {
+  padding-left: 10px;
+  padding-right: 10px;
+  fill: white !important;
+}
+
+.slider-control-bottomcenter>ul>li>button>svg {
+  width: 10px;
+  height: 10px;
+}
+
+.slider-control-centerright {
+  margin-right: 20px;
+}
+
+.slider-control-centerleft {
+  margin-left: 20px;
+}
+
+.slider-control-centerright>button,
+.slider-control-centerleft>button {
+  padding: 0 !important;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+}
+
+.slider-control-centerright>button>svg,
+.slider-control-centerleft>button>svg {
+  font-size: 2.5rem;
+  fill: #fff;
+}
+
+
+/* =====  Responsive  ===== */
+@media only screen and (max-width: 640px) {
+  .slider-container {
+    padding: 100px 0px;
+  }
+
+  .slider-list>.slide {
+    padding: 0 16px !important;
+  }
+
+  .slider-control-centerright>button>svg,
+  .slider-control-centerleft>button>svg {
+    font-size: 1.5rem;
+  }
+}
+
+@media only screen and (min-width: 1920px) {
+  .slider-control-centerleft {
+    position: absolute;
+    left: 100px;
+  }
+  .slider-control-centerright {
+    position: absolute;
+    right: 100px;
+  }
+}
+@media only screen and (min-width: 2160px) {
+  .slider-control-centerleft {
+    position: absolute;
+    left: 400px;
+  }
+  .slider-control-centerright {
+    position: absolute;
+    right: 400px;
+  }
+}
